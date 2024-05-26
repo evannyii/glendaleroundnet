@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glendale Roundnet Club Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Glendale Roundnet Club Portfolio</h1>
+    </header>
+    <main>
+        <section id="upload-section">
+            <h2>Upload Event</h2>
+            <form id="upload-form">
+                <label for="title">Event Title:</label>
+                <input type="text" id="title" name="title" required>
+
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" required></textarea>
+
+                <label for="media">Upload Media:</label>
+                <input type="file" id="media" name="media" accept="image/*,video/*" required>
+
+                <button type="submit">Upload</button>
+            </form>
+        </section>
+        <section id="events-section">
+            <h2>Event Gallery</h2>
+            <div id="events-container"></div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
